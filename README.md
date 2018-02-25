@@ -1,6 +1,7 @@
 # Lerna TypeScript Jest boilerplate
 
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/bunch-of-friends/lerna-typescript-jest-boilerplate/blob/master/LICENSE)
+[![CircleCI](https://circleci.com/gh/bunch-of-friends/lerna-typescript-jest-boilerplate.svg?style=svg)](https://circleci.com/gh/bunch-of-friends/lerna-typescript-jest-boilerplate)
 
 Boilerplate template of a monorepo setup using [Lerna](https://github.com/lerna/lerna/), [TypeScript](https://github.com/microsoft/typescript) and [Jest](https://github.com/facebook/jest).
 
