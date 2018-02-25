@@ -28,6 +28,7 @@
     "rimraf": "^2.6.2",
     "ts-jest": "^22.0.4",
     "tslint": "^5.9.1",
+    "tslint-config-bunch-of-friends": "^1.0.1",
     "tslint-eslint-rules": "^5.0.0",
     "typescript": "^2.7.2"
   }
