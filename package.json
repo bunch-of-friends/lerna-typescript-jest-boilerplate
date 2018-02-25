@@ -3,11 +3,19 @@
   "description": "Boilerplate template of a monorepo setup using Lerna, TypeScript and Jest",
   "version": "1.0.0",
   "license": "MIT",
-  "contributors": [
+  "maintainers": [
     {
       "name": "David Bohunek",
       "email": "bohunek@gmail.com"
     }
+  ],
+  "keywords": [
+    "monorepo",
+    "lerna",
+    "typescript",
+    "jest",
+    "boilerplate",
+    "template"
   ],
   "scripts": {
     "bootstrap": "npm install lerna && lerna bootstrap && npm install",
