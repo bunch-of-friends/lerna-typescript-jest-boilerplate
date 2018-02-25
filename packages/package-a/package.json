@@ -1,0 +1,22 @@
+{
+    "name": "@lerna-typescript-jest-boilerplate/package-a",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "test": "jest --config ../../jest.config.json --rootDir",
+        "compile": "tsc",
+        "compile:watch": "tsc -w",
+        "cleanup": "rimraf -rf dist coverage"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "@lerna-typescript-jest-boilerplate/package-b": "^1.0.0"
+    },
+    "peerDependency": {
+        "@lerna-typescript-jest-boilerplate/package-b": "*"
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "lerna-typescript-jest-boilerplate",
+  "description": "Boilerplate template of a monorepo setup using Lerna, TypeScript and Jest",
+  "version": "1.0.0",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "David Bohunek",
+      "email": "bohunek@gmail.com"
+    }
+  ],
+  "scripts": {
+    "bootstrap": "npm install lerna && lerna bootstrap && npm install",
+    "reset": "npm run cleanup && rimraf -rf node_modules && npm run bootstrap",
+    "test": "lerna run test",
+    "build": "npm run cleanup && lerna run compile",
+    "build:watch": "npm run cleanup && lerna run compile:watch --stream",
+    "cleanup": "lerna run cleanup --stream --parallel",
+    "demo": "npm run build && (cd packages/demo-app && npm run start)",
+    "lint": "tslint --fix '**/*.ts{,x}' -e '**/**/*d.ts' -e '**/node_modules/**'",
+    "publish": "lerna publish --force-publish=* --skip-npm --skip-git",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.1.3",
+    "jest": "^22.3.0",
+    "lerna": "^2.9.0",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^22.0.4",
+    "tslint": "^5.9.1",
+    "tslint-eslint-rules": "^5.0.0",
+    "typescript": "^2.7.2"
+  }
+}

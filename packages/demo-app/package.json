@@ -1,0 +1,24 @@
+{
+    "name": "@lerna-typescript-jest-boilerplate/demo-app",
+    "version": "1.0.0",
+    "scripts": {
+        "compile": "webpack",
+        "cleanup": "rimraf -rf dist coverage",
+        "start": "webpack-dev-server --watch-content-base --open"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@lerna-typescript-jest-boilerplate/package-a": "^1.0.0",
+        "@lerna-typescript-jest-boilerplate/package-b": "^1.0.0"
+    },
+    "devDependencies": {
+        "clean-webpack-plugin": "^0.1.18",
+        "html-webpack-plugin": "^2.30.1",
+        "serve": "^6.4.9",
+        "ts-loader": "^3.5.0",
+        "webpack": "^3.11.0",
+        "webpack-dev-server": "^2.11.1"
+    }
+}
