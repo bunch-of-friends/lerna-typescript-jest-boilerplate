@@ -9,7 +9,7 @@
         "compile": "tsc",
         "compile:watch": "tsc -w",
         "cleanup": "rimraf -rf dist coverage",
-        "lint": "tslint --fix '**/*.ts{,x}' -e '**/**/*d.ts' -e '**/node_modules/**' -p ."
+        "lint": "tslint '**/*.ts{,x}' -e '**/**/*d.ts' -e '**/node_modules/**' -p ."
     },
     "publishConfig": {
         "access": "public"
