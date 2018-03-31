@@ -4,7 +4,8 @@
     "scripts": {
         "compile": "webpack",
         "cleanup": "rimraf -rf dist coverage",
-        "start": "webpack-dev-server --watch-content-base --open"
+        "start": "webpack-dev-server --watch-content-base --open",
+        "lint": "tslint --fix '**/*.ts{,x}' -e '**/**/*d.ts' -e '**/node_modules/**' -p ."
     },
     "publishConfig": {
         "access": "public"
